@@ -1,8 +1,8 @@
 require 'JSON'
 
-json = File.open("reseipt-data.json").read
-receipts = JSON.parse(json)
+json = File.open("recipe-data.json").read
+recipes = JSON.parse(json)
 
-receipts.each do |receipt|
-	puts receipt
+recipes.each do |recipe|
+	puts recipe
 end
