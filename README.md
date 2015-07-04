@@ -7,7 +7,7 @@ Ruby
 ## 実行方法
 
 ```
-$ ruby app.rb
+$ ruby app.rb recipe-data.json
 ```
 
 ## レシピファイルのフォーマット
