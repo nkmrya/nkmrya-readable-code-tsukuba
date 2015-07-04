@@ -1,7 +1,7 @@
 require 'JSON'
 
 def show_recipe(recipe, id)
-	puts "#{id}: #{recipe}"
+	puts "#{id}: #{recipe["name"]} #{recipe["description"]}"
 end
 
 def show_recipes_all(recipes)
@@ -18,8 +18,8 @@ recipe_file_path = ARGV[0]
 json = File.open(recipe_file_path).read
 recipes = JSON.parse(json)
 
-show_id = ARGV[1].to_i
-if show_id
+if ARGV[1]
+	show_id = ARGV[1].to_i
 	show_recipe_by_id(recipes, show_id)
 else
 	show_recipes_all(recipes)

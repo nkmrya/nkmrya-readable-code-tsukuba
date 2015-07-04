@@ -18,7 +18,6 @@ $ ruby app.rb recipe-data.json
 
 ```
 [
-	"オムライス",
-	"オムレツ"
+	{"name": "料理の名前", "description": "料理の説明"}
 ]
 ```
